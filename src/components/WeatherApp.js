@@ -47,6 +47,26 @@ import { round } from '../utils/helpers';
 // 	width: 100%;
 // `;
 
+const customStyles = {
+  fontFamily: 'Playfair Display, serif',
+	gradientStart:  '#00FFFFFF',
+	gradientMid:  '#00FFFFFF',
+	gradientEnd:  '#00FFFFFF',
+	locationFontColor:  '#000000',
+	todayTempFontColor:  '#000000',
+	todayDateFontColor:  '#B5DEF4',
+	todayRangeFontColor:  '#B5DEF4',
+	todayDescFontColor:  '#B5DEF4',
+	todayInfoFontColor:  '#B5DEF4',
+	todayIconColor:  '#FFF',
+	forecastBackgroundColor:  '#FFF',
+	forecastSeparatorColor:  '#DDD',
+	forecastDateColor:  '#777',
+	forecastDescColor:  '#777',
+	forecastRangeColor:  '#777',
+	forecastIconColor:  '#4BC4F7',
+};
+
 ////////////**********************'/////////////////////////// */
 //Gammalt som inte funkade att styla från https://www.npmjs.com/package/react-open-weather
 export const _getWeather = (_API) => async (lat, lon) => {
@@ -109,23 +129,3 @@ export default function WeatherApp() {
 				/>
 	) : null;
 }
-
-const customStyles = {
-  fontFamily: 'Playfair Display, serif',
-	gradientStart:  '#00FFFFFF',
-	gradientMid:  '#00FFFFFF',
-	gradientEnd:  '#00FFFFFF',
-	locationFontColor:  '#000000',
-	todayTempFontColor:  '#000000',
-	todayDateFontColor:  '#B5DEF4',
-	todayRangeFontColor:  '#B5DEF4',
-	todayDescFontColor:  '#B5DEF4',
-	todayInfoFontColor:  '#B5DEF4',
-	todayIconColor:  '#FFF',
-	forecastBackgroundColor:  '#FFF',
-	forecastSeparatorColor:  '#DDD',
-	forecastDateColor:  '#777',
-	forecastDescColor:  '#777',
-	forecastRangeColor:  '#777',
-	forecastIconColor:  '#4BC4F7',
-};
