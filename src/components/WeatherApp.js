@@ -98,13 +98,6 @@ export default function WeatherApp() {
 	}, [latLng]);
 
 	return weather ? (
-		<div style={styles.container}>
-			<div style={styles.headerContainer}>
-				{/* /* <span style={styles.title}>What's the Weather? 🌤</span>*/
-				/* <LocationSearchInput setLatLng={setLatLng} /> */}
-			</div>
-			<div style={styles.weatherContainer}>
-				<p>Takbaren just now:</p>
 				<ReactWeather
 					className='weather'
 					theme={customStyles}
@@ -114,76 +107,8 @@ export default function WeatherApp() {
 					// locationLabel={weather.cityName}
 					// unitsLabels={{ temperature: 'C', windSpeed: 'Km/h' }}
 				/>
-				<div>
-					{weather === 'Sunny' && <p>It's sunny on the roof top! </p>}
-					{weather === 'Rain' && (
-						<p>It's raining, check our instagram to see if we're open </p>
-					)}
-					{weather === 'Clouds' && (
-						<p>Cloudy day, perfect for a roof top drink</p>
-					)}
-				</div>
-				<div style={styles.icon}>
-					<img
-						src={`https://openweathermap.org/img/wn/${icon}@4x.png`}
-						alt='icon'
-					/>
-				</div>
-			</div>
-		</div>
 	) : null;
 }
-
-const styles = {
-	container: {
-		display: 'flex',
-		flexDirection: 'column',
-		alignSelf: 'center',
-		marginTop: 100,
-		width: 800,
-		height: 400,
-    fontFamily: 'Playfair Display',
-    color: 'black',
-    background: 'transparent'
-	},
-	headerContainer: {
-		alignSelf: 'center',
-		marginLeft: -170,
-		marginTop: 20,
-		display: 'flex',
-		flexDirection: 'column',
-		alignItems: 'flex-start',
-	},
-	icon: {
-		zIndex: 100,
-		marginTop: -225,
-		marginLeft: 315,
-		display: 'flex',
-	},
-	weatherContainer: { alignSelf: 'center', width: 500 },
-	title: {
-		textAlign: 'center',
-		fontWeight: 700,
-		fontSize: '20px',
-	},
-	backgroundCard: {
-		height: 100,
-		width: 100,
-	},
-	backdrop: {
-		boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
-		borderRadius: '50px 50px 50px 50px',
-		height: 300,
-		width: 500,
-		marginLeft: -100,
-		zIndex: -100,
-		backgroundColor: 'none',
-		position: 'absolute',
-		alignSelf: 'center',
-		overflow: 'auto',
-	},
-};
-
 
 const customStyles = {
   fontFamily: 'Playfair Display, serif',
