@@ -107,7 +107,7 @@ export default function WeatherApp() {
 				<p>Takbaren just now:</p>
 				<ReactWeather
 					className='weather'
-					// theme={customStyles}
+					theme={customStyles}
 					isLoading={false}
 					data={weather.data}
 					lang='en'
@@ -182,4 +182,25 @@ const styles = {
 		alignSelf: 'center',
 		overflow: 'auto',
 	},
+};
+
+
+const customStyles = {
+  fontFamily: 'Playfair Display, serif',
+	gradientStart:  '#00FFFFFF',
+	gradientMid:  '#00FFFFFF',
+	gradientEnd:  '#00FFFFFF',
+	locationFontColor:  '#000000',
+	todayTempFontColor:  '#000000',
+	todayDateFontColor:  '#B5DEF4',
+	todayRangeFontColor:  '#B5DEF4',
+	todayDescFontColor:  '#B5DEF4',
+	todayInfoFontColor:  '#B5DEF4',
+	todayIconColor:  '#FFF',
+	forecastBackgroundColor:  '#FFF',
+	forecastSeparatorColor:  '#DDD',
+	forecastDateColor:  '#777',
+	forecastDescColor:  '#777',
+	forecastRangeColor:  '#777',
+	forecastIconColor:  '#4BC4F7',
 };
