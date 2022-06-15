@@ -142,6 +142,9 @@ const styles = {
 		marginTop: 100,
 		width: 800,
 		height: 400,
+    fontFamily: 'Playfair Display',
+    color: 'black',
+    background: 'transparent'
 	},
 	headerContainer: {
 		alignSelf: 'center',
